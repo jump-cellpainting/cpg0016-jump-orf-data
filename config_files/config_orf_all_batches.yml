@@ -1,0 +1,558 @@
+---
+pipeline: Feature select all batches
+output_dir: profiles
+platemap_well_column: Metadata_well_position
+compartments:
+  - cells
+  - cytoplasm
+  - nuclei
+feature_select:
+  perform: true
+  features: infer
+  level: all
+  gct: false
+  image_features: true
+  operations:
+    - variance_threshold
+    - correlation_threshold
+    - drop_na_columns
+    - blocklist
+feature_select_negcon:
+  perform: true
+  features: infer
+  level: all
+  gct: false
+  image_features: true
+  operations:
+    - variance_threshold
+    - correlation_threshold
+    - drop_na_columns
+    - blocklist
+options:
+  compression: gzip
+  float_format: "%.5g"
+  samples: all
+---
+batch: 2021_04_26_Batch1
+plates:
+  - name: BR00121539
+    process: true
+  - name: BR00121537
+    process: true
+  - name: BR00121538
+    process: true
+  - name: BR00121557
+    process: true
+  - name: BR00121561
+    process: true
+  - name: BR00121564
+    process: true
+  - name: BR00121566
+    process: true
+  - name: BR00121565
+    process: true
+  - name: BR00121563
+    process: true
+  - name: BR00121562
+    process: true
+  - name: BR00121558
+    process: true
+  - name: BR00121559
+    process: true
+  - name: BR00121560
+    process: true
+  - name: BR00117035
+    process: true
+  - name: BR00117036
+    process: true
+  - name: BR00117041
+    process: true
+  - name: BR00117040
+    process: true
+  - name: BR00117039
+    process: true
+  - name: BR00117038
+    process: true
+  - name: BR00117037
+    process: true
+process: true
+---
+batch: 2021_05_31_Batch2
+plates:
+  - name: BR00121556
+    process: true
+  - name: BR00121555
+    process: true
+  - name: BR00121554
+    process: true
+  - name: BR00121553
+    process: true
+  - name: BR00121552
+    process: true
+  - name: BR00121551
+    process: true
+  - name: BR00121550
+    process: true
+  - name: BR00121549
+    process: true
+  - name: BR00121548
+    process: true
+  - name: BR00121547
+    process: true
+  - name: BR00121546
+    process: true
+  - name: BR00121545
+    process: true
+  - name: BR00121544
+    process: true
+  - name: BR00121543
+    process: true
+  - name: BR00123525
+    process: true
+  - name: BR00123528B
+    process: true
+  - name: BR00123529
+    process: true
+  - name: BR00123530
+    process: true
+  - name: BR00123526
+    process: true
+  - name: BR00123527
+    process: true
+process: true
+---
+batch: 2021_05_10_Batch3
+plates:
+  - name: BR00123616
+    process: true
+  - name: BR00123617
+    process: true
+  - name: BR00123618
+    process: true
+  - name: BR00123613
+    process: true
+  - name: BR00123614
+    process: true
+  - name: BR00123615
+    process: true
+  - name: BR00123506
+    process: true
+  - name: BR00123507
+    process: true
+  - name: BR00123532
+    process: true
+  - name: BR00123623
+    process: true
+  - name: BR00123624
+    process: true
+  - name: BR00123625
+    process: true
+  - name: BR00123626
+    process: true
+  - name: BR00123619
+    process: true
+  - name: BR00123620
+    process: true
+  - name: BR00123627
+    process: true
+  - name: BR00123628
+    process: true
+  - name: BR00123629
+    process: true
+  - name: BR00123621
+    process: true
+  - name: BR00123622
+    process: true
+process: true
+---
+batch: 2021_05_17_Batch4
+plates:
+  - name: BR00123787
+    process: true
+  - name: BR00123786
+    process: true
+  - name: BR00123785
+    process: true
+  - name: BR00123791
+    process: true
+  - name: BR00123790
+    process: true
+  - name: BR00123509
+    process: true
+  - name: BR00123510
+    process: true
+  - name: BR00123511
+    process: true
+  - name: BR00123789
+    process: true
+  - name: BR00123788
+    process: true
+  - name: BR00123512
+    process: true
+  - name: BR00123513
+    process: true
+  - name: BR00123514
+    process: true
+  - name: BR00123515
+    process: true
+  - name: BR00123516
+    process: true
+  - name: BR00123517
+    process: true
+  - name: BR00123518
+    process: true
+  - name: BR00123519
+    process: true
+  - name: BR00123520
+    process: true
+  - name: BR00123521
+    process: true
+process: true
+---
+batch: 2021_06_07_Batch5
+plates:
+  - name: BR00123947
+    process: true
+  - name: BR00123948
+    process: true
+  - name: BR00123949
+    process: true
+  - name: BR00123950
+    process: true
+  - name: BR00123951
+    process: true
+  - name: BR00123952
+    process: true
+  - name: BR00123956
+    process: true
+  - name: BR00123955
+    process: true
+  - name: BR00123954
+    process: true
+  - name: BR00123953
+    process: true
+  - name: BR00123961
+    process: true
+  - name: BR00123960
+    process: true
+  - name: BR00123959
+    process: true
+  - name: BR00123958
+    process: true
+  - name: BR00123957
+    process: true
+  - name: BR00123966
+    process: true
+  - name: BR00123965
+    process: true
+  - name: BR00123964
+    process: true
+  - name: BR00123963
+    process: true
+  - name: BR00123962
+    process: true
+process: true
+---
+batch: 2021_06_14_Batch6
+plates:
+  - name: BR00124766
+    process: true
+  - name: BR00124767
+    process: true
+  - name: BR00124768
+    process: true
+  - name: BR00124769
+    process: true
+  - name: BR00123945
+    process: true
+  - name: BR00124761
+    process: true
+  - name: BR00124770
+    process: true
+  - name: BR00124776
+    process: true
+  - name: BR00124777
+    process: true
+  - name: BR00124775
+    process: true
+  - name: BR00124778
+    process: true
+  - name: BR00124779
+    process: true
+  - name: BR00124771
+    process: true
+  - name: BR00124772
+    process: true
+  - name: BR00124773
+    process: true
+process: true
+---
+batch: 2021_06_21_Batch7
+plates:
+  - name: BR00125164
+    process: true
+  - name: BR00125163
+    process: true
+  - name: BR00125162
+    process: true
+  - name: BR00124785
+    process: true
+  - name: BR00124784
+    process: true
+  - name: BR00125169
+    process: true
+  - name: BR00125168
+    process: true
+  - name: BR00125167
+    process: true
+  - name: BR00125166
+    process: true
+  - name: BR00125165
+    process: true
+  - name: BR00125174
+    process: true
+  - name: BR00125173
+    process: true
+  - name: BR00125172
+    process: true
+  - name: BR00125171
+    process: true
+  - name: BR00125170
+    process: true
+  - name: BR00125179
+    process: true
+  - name: BR00125178
+    process: true
+  - name: BR00125177
+    process: true
+  - name: BR00125176
+    process: true
+  - name: BR00125175
+    process: true
+process: true
+---
+batch: 2021_07_12_Batch8
+plates:
+  - name: BR00125621
+    process: true
+  - name: BR00125620
+    process: true
+  - name: BR00125619
+    process: true
+  - name: BR00124788
+    process: true
+  - name: BR00124787
+    process: true
+  - name: BR00125626
+    process: true
+  - name: BR00125625
+    process: true
+  - name: BR00125624
+    process: true
+  - name: BR00125623
+    process: true
+  - name: BR00125622
+    process: true
+  - name: BR00125631
+    process: true
+  - name: BR00125630
+    process: true
+  - name: BR00125629
+    process: true
+  - name: BR00125628
+    process: true
+  - name: BR00125627
+    process: true
+  - name: BR00125636
+    process: true
+  - name: BR00125635
+    process: true
+  - name: BR00125634
+    process: true
+  - name: BR00125633
+    process: true
+process: true
+---
+batch: 2021_07_26_Batch9
+plates:
+  - name: BR00126060
+    process: true
+  - name: BR00126057
+    process: true
+  - name: BR00126058
+    process: true
+  - name: BR00126059
+    process: true
+  - name: BR00126056
+    process: true
+  - name: BR00126055
+    process: true
+  - name: BR00126054
+    process: true
+  - name: BR00126053
+    process: true
+  - name: BR00126052
+    process: true
+  - name: BR00126051
+    process: true
+  - name: BR00126045
+    process: true
+  - name: BR00126044
+    process: true
+  - name: BR00126043
+    process: true
+  - name: BR00124791
+    process: true
+  - name: BR00124790
+    process: true
+  - name: BR00126050
+    process: true
+  - name: BR00126049
+    process: true
+  - name: BR00126048
+    process: true
+  - name: BR00126047
+    process: true
+  - name: BR00126046
+    process: true
+process: true
+---
+batch: 2021_08_02_Batch10
+plates:
+  - name: BR00126399
+    process: true
+  - name: BR00126398
+    process: true
+  - name: BR00126397
+    process: true
+  - name: BR00126396
+    process: true
+  - name: BR00126395
+    process: true
+  - name: BR00126394
+    process: true
+  - name: BR00126393
+    process: true
+  - name: BR00126392
+    process: true
+  - name: BR00126391
+    process: true
+  - name: BR00126390
+    process: true
+  - name: BR00126389
+    process: true
+  - name: BR00126388
+    process: true
+  - name: BR00126387
+    process: true
+  - name: BR00126386
+    process: true
+  - name: BR00126385
+    process: true
+  - name: BR00126403
+    process: true
+  - name: BR00126402
+    process: true
+  - name: BR00126401
+    process: true
+  - name: BR00126400
+    process: true
+  - name: BR00124794
+    process: true
+process: true
+---
+batch: 2021_08_09_Batch11
+plates:
+  - name: BR00126542
+    process: true
+  - name: BR00126541
+    process: true
+  - name: BR00126540
+    process: true
+  - name: BR00126539
+    process: true
+  - name: BR00126538
+    process: true
+  - name: BR00126537
+    process: true
+  - name: BR00126536
+    process: true
+  - name: BR00126535
+    process: true
+  - name: BR00126534
+    process: true
+  - name: BR00126521
+    process: true
+  - name: BR00126520
+    process: true
+  - name: BR00126553
+    process: true
+  - name: BR00126552
+    process: true
+  - name: BR00126551
+    process: true
+  - name: BR00126550
+    process: true
+  - name: BR00126549
+    process: true
+  - name: BR00126548
+    process: true
+  - name: BR00126547
+    process: true
+  - name: BR00126546
+    process: true
+  - name: BR00126545
+    process: true
+process: true
+---
+batch: 2021_08_23_Batch12
+plates:
+  - name: BR00126711
+    process: true
+  - name: BR00126710
+    process: true
+  - name: BR00126709
+    process: true
+  - name: BR00126714
+    process: true
+  - name: BR00126706
+    process: true
+  - name: BR00126712
+    process: true
+  - name: BR00126718
+    process: true
+  - name: BR00126717
+    process: true
+  - name: BR00126716
+    process: true
+  - name: BR00126715
+    process: true
+  - name: BR00126708
+    process: true
+process: true
+---
+batch: 2021_08_30_Batch13
+plates:
+  - name: BR00126543
+    process: true
+  - name: BR00126062
+    process: true
+  - name: BR00124782
+    process: true
+  - name: BR00124781
+    process: true
+  - name: BR00126404
+    process: true
+  - name: BR00123537
+    process: true
+  - name: BR00123533
+    process: true
+  - name: BR00123534
+    process: true
+  - name: BR00123535
+    process: true
+  - name: BR00123536
+    process: true
+  - name: BR00123539
+    process: true
+process: true
