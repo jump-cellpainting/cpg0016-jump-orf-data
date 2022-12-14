@@ -1,0 +1,114 @@
+---
+pipeline: JUMP_ORF_ORF_Batch3
+output_dir: profiles
+platemap_well_column: Metadata_well_position
+compartments:
+  - cells
+  - cytoplasm
+  - nuclei
+aggregate:
+  perform: false
+  plate_column: Metadata_Plate
+  well_column: Metadata_Well
+  method: median
+  fields: all
+  image_feature_categories:
+    - Count
+    - Intensity
+annotate:
+  perform: true
+  well_column: Metadata_Well
+  external :
+    perform: true
+    file: orf_metadata.tsv
+    merge_column: broad_sample
+normalize:
+  perform: true
+  method: mad_robustize
+  features: infer
+  mad_robustize_fudge_factor: 0
+  image_features: true
+normalize_negcon:
+  perform: true
+  method: mad_robustize
+  features: infer
+  mad_robustize_fudge_factor: 0
+  image_features: true
+feature_select:
+  perform: true
+  features: infer
+  level: batch
+  gct: false
+  image_features: true
+  operations:
+    - variance_threshold
+    - correlation_threshold
+    - drop_na_columns
+    - blocklist
+feature_select_negcon:
+  perform: true
+  features: infer
+  level: batch
+  gct: false
+  image_features: true
+  operations:
+    - variance_threshold
+    - correlation_threshold
+    - drop_na_columns
+    - blocklist
+quality_control:
+  perform: true
+  summary:
+    perform: true
+    row: Metadata_Row
+    column: Metadata_Col
+  heatmap:
+    perform : true
+options:
+  compression: gzip
+  float_format: "%.5g"
+  samples: all
+---
+batch: 2021_05_10_Batch3
+plates:
+  - name: BR00123616
+    process: true
+  - name: BR00123617
+    process: true
+  - name: BR00123618
+    process: true
+  - name: BR00123613
+    process: true
+  - name: BR00123614
+    process: true
+  - name: BR00123615
+    process: true
+  - name: BR00123506
+    process: true
+  - name: BR00123507
+    process: true
+  - name: BR00123532
+    process: true
+  - name: BR00123623
+    process: true
+  - name: BR00123624
+    process: true
+  - name: BR00123625
+    process: true
+  - name: BR00123626
+    process: true
+  - name: BR00123619
+    process: true
+  - name: BR00123620
+    process: true
+  - name: BR00123627
+    process: true
+  - name: BR00123628
+    process: true
+  - name: BR00123629
+    process: true
+  - name: BR00123621
+    process: true
+  - name: BR00123622
+    process: true
+process: true
