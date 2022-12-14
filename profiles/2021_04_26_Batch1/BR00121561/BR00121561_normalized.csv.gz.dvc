@@ -1,0 +1,4 @@
+outs:
+- md5: 0c1358130a4ca2dc20d3fc208c34311c
+  size: 9035536
+  path: BR00121561_normalized.csv.gz
