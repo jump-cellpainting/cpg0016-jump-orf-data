@@ -2,3 +2,4 @@
     remote = s3storage
 ['remote "s3storage"']
     url = s3://cellpainting-gallery/cpg0016-jump/source_4/workspace/software/jump-orf-data_DVC
+    acl = bucket-owner-full-control
