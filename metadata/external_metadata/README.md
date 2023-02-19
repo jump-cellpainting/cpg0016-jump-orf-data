@@ -29,7 +29,9 @@ For `orf_metadata.tsv`:
 
 <details>
 
-Email snippets about the source of `orf_metadata.tsv` ([link](https://docs.google.com/spreadsheets/d/1X5DN3b5naGhllyZNnNA9rIsIeu0D7--9dAWbFAV_6pQ/edit#gid=1141482821))
+Email snippets about the source of `orf_metadata.tsv` ([link](https://docs.google.com/spreadsheets/d/1X5DN3b5naGhllyZNnNA9rIsIeu0D7--9dAWbFAV_6pQ/edit#gid=1141482821)).
+
+Note: this file was also copied over to [an internal repo](https://github.com/jump-cellpainting/jump-cellpainting/blob/4bd145565ebd6c91bc93e11d7456cc3086512ca8/7.design-orf-experiment/data/pLX_304_ORF_collection.csv).
 
 ---
   
