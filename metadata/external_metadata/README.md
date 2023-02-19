@@ -100,6 +100,8 @@ In this specific case (a random example) we are honing in on,
 
 Is all that correct?
 
+---
+
 You are almost right. except one correction note, and one explanation note below in red:
 
 In this specific case (a random example) we are honing in on,
