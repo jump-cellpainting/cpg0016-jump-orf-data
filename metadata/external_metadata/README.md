@@ -29,7 +29,7 @@ For `orf_metadata.tsv`:
 
 <details>
 
-Email snippets about [link](https://docs.google.com/spreadsheets/d/1X5DN3b5naGhllyZNnNA9rIsIeu0D7--9dAWbFAV_6pQ/edit#gid=1141482821)
+Email snippets about the source of `orf_metadata.tsv` ([link](https://docs.google.com/spreadsheets/d/1X5DN3b5naGhllyZNnNA9rIsIeu0D7--9dAWbFAV_6pQ/edit#gid=1141482821))
 
 ---
   
